@@ -1,6 +1,6 @@
 -- vim.g.mapleader = " "
 -- vim.g.maplocalleader = ","
-vim.g.tmux_navigator_no_mappings = 1
+-- vim.g.tmux_navigator_no_mappings = 1
 vim.opt.clipboard = "unnamedplus"
 vim.opt.cursorline = true
 vim.opt.laststatus = 3
@@ -16,7 +16,7 @@ vim.opt.cmdheight = 0
 vim.opt.showmode = false
 vim.opt.showcmd = false
 vim.opt.textwidth = 120
-vim.o.sessionoptions = "buffers,curdir,folds,help,terminal,options"
+-- vim.o.sessionoptions = "buffers,curdir,folds,help,terminal,options"
 vim.o.title = true
 vim.o.titlestring = true
 

@@ -8,8 +8,8 @@ local M = {
 			patterns = { "venv", "Cargo.toml", ".git" },
 			show_hidden = true,
 			silent_chdir = true,
-			exclude_dirs = {"~"},
-			-- scope_chdir = "global",
+			exclude_dirs = { "~" },
+			scope_chdir = "global",
 		})
 		require("telescope").load_extension("projects")
 		vim.keymap.set("n", "<leader><enter>", ":Telescope projects<cr>")

@@ -3,8 +3,8 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	-- event = { "VeryLazy" },
 	dependencies = {
-		{ "folke/neoconf.nvim", cmd = "Neoconf",                                config = true },
-		{ "folke/neodev.nvim",  opts = { experimental = { pathStrict = true } } },
+		{ "folke/neoconf.nvim", cmd = "Neoconf", config = true },
+		{ "folke/neodev.nvim", opts = { experimental = { pathStrict = true } } },
 		"mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
 		"hrsh7th/cmp-nvim-lsp",
@@ -50,7 +50,7 @@ return {
 		mlsp.setup_handlers({ setup })
 
 		require("utils").on_attach(function(client, bufnr)
-			print("Attaching keymaps to client '" .. client["name"] .. "'")
+			-- print("Attaching keymaps to client '" .. client["name"] .. "'")
 			-- print(vim.inspect(client))
 			local keymap_opts = { buffer = bufnr, silent = true, noremap = true }
 

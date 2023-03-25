@@ -66,14 +66,15 @@ local M = {
 
 		require("nvim-tree").setup({
 			on_attach = on_attach,
-			sync_root_with_cwd = true,
-			respect_buf_cwd = true,
+			-- sync_root_with_cwd = true,
+			-- respect_buf_cwd = true,
+			reload_on_bufenter = true,
 			view = {
 				centralize_selection = true,
 			},
 			update_focused_file = {
 				enable = true,
-				-- update_root = true,
+				update_root = true,
 			},
 		})
 	end,
