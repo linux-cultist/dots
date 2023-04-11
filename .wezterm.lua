@@ -6,6 +6,7 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 	config.font = wezterm.font("Jetbrains Mono", { weight = "Regular" })
 	config.color_scheme = "Ayu Mirage"
+	config.hide_tab_bar_if_only_one_tab = true
 	config.tab_bar_at_bottom = true
 
 	config.keys = {
