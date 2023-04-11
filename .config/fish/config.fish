@@ -11,9 +11,10 @@ if status is-interactive
     alias ta="t a -t"
     alias tls="t ls"
     alias tn="t new -t"
-    alias gitconfig='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
-    set fish_greeting
+    # alias gitconfig='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+	source ~/.config/fish/functions/dots.fish
+    
+	set fish_greeting
     set -g fish_autosuggestion_enabled 0
 
     set -gx DEBUGINFOD_URLS https://debuginfod.archlinux.org/
