@@ -1,6 +1,6 @@
 return {
 	"linux-cultist/venv-selector.nvim",
-	dependencies = { "neovim/nvim-lspconfig", "nvim-telescope/telescope.nvim" },
+	dependencies = { "neovim/nvim-lspconfig", "nvim-telescope/telescope.nvim", "mfussenegger/nvim-dap-python" },
 	dev = true,
 	enabled = true,
 	config = true,
@@ -24,10 +24,10 @@ return {
 		-- name = "venv"
 		-- name = { "venv", ".venv" },
 		-- search = false,
-		-- auto_refresh = false,
+		-- auto_refresh = true,
 		-- search_venv_managers = false,
 		-- search_workspace = true,
-		enable_debug_output = false,
+		-- enable_debug_output = false,
 	},
 	keys = { {
 		"<localleader>v",

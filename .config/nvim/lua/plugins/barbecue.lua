@@ -6,7 +6,7 @@ local M = {
 	version = "*",
 	event = "VeryLazy",
 	config = true,
-	enabled = true
+	enabled = false,
 }
 
 return M

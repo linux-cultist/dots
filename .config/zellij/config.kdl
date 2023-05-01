@@ -1,0 +1,11 @@
+theme "menace"
+default_layout "compact"
+pane_frames false
+simplified_ui false
+
+keybinds {
+	normal {
+		unbind "Ctrl o" /* Unbind this, used by vim */
+		bind "Ctrl y" { SwitchToMode "session"; }
+	}
+}

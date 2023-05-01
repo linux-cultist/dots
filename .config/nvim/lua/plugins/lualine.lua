@@ -6,6 +6,7 @@ local M = {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "kyazdani42/nvim-web-devicons" },
 	event = "VeryLazy",
+	enabled = false,
 	keys = {
 		{
 			"<localleader>bs",
