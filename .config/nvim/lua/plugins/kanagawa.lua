@@ -1,7 +1,7 @@
 
 local M = {
 	"rebelot/kanagawa.nvim",
-	enabled = true,
+	enabled = false,
 	config = true,
 	event = "VeryLazy"
 }

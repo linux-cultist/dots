@@ -1,5 +1,6 @@
 local M = {
 	"folke/tokyonight.nvim",
+	enabled = true,
 	priority = 1000,
 	lazy = false,
 	opts = function()

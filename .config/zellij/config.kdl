@@ -3,6 +3,12 @@ default_layout "compact"
 pane_frames false
 simplified_ui false
 
+ui {
+    pane_frames {
+        hide_session_name true
+    }
+}
+
 keybinds {
 	normal {
 		unbind "Ctrl o" /* Unbind this, used by vim */
