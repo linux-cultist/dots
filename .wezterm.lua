@@ -8,7 +8,7 @@ if wezterm.config_builder then
 	config.color_scheme = "Ayu Mirage"
 	config.hide_tab_bar_if_only_one_tab = true
 	config.tab_bar_at_bottom = true
-	config.window_background_opacity = 0.95
+	config.window_background_opacity = 1.0
 	config.text_background_opacity = 1.0
 	config.hide_mouse_cursor_when_typing = false
 
