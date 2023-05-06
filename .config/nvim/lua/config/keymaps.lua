@@ -10,7 +10,7 @@ vim.keymap.set("n", "<A-w>", "dF")
 vim.keymap.set("n", "<C-f>", "/") -- Remap search button for no shift needed
 vim.keymap.set("n", "<S-M-Left>", ":bprev<cr>") -- Remap search button for no shift needed
 vim.keymap.set("n", "<S-M-Right>", ":bnext<cr>") -- Remap search button for no shift needed
-vim.keymap.set("n", "<C-w>", ":bd!<cr>", { silent = true })
+-- vim.keymap.set("n", "<C-w>", ":bd!<cr>", { silent = true })
 vim.keymap.set("i", "<C-r>", "<C-r><C-o>")
 -- vim.keymap.set("n", "<C-c>", "<Esc>")
 vim.keymap.set("n", "<localleader><localleader>", "<c-6>", { desc = "Jump to Previous Buffer" })

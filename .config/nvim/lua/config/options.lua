@@ -19,8 +19,7 @@ vim.opt.textwidth = 120
 -- vim.o.sessionoptions = "buffers,curdir,folds,help,terminal,options"
 vim.o.title = true
 vim.o.titlestring = true
-vim.o.laststatus = 0
-
+vim.o.laststatus = 3
 -- vim.cmd [[highlight IndentBlanklineIndent1 guibg=#1f1f1f gui=nocombine]]
 -- vim.cmd [[highlight IndentBlanklineIndent2 guibg=#1a1a1a gui=nocombine]]-- vim.opt.list = true
 -- vim.opt.listchars:append("space:⋅")
@@ -51,6 +50,9 @@ if vim.g.GuiLoaded then
 	-- vim.opt.guifont = "FiraCode Nerd Font Mono:h13"
 	-- vim.opt.cmdheight = 0
 end
+
+-- vim.cmd[[set highlight WinSeparator guifg=orange]]
+
 
 if vim.g.neovide then
 	vim.opt.guifont = { "JetbrainsMono_Nerd_Font", ":h12" }

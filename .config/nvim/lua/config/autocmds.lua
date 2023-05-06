@@ -7,11 +7,33 @@
 -- end
 --
 
-local function open_nvim_tree()
-	-- open the tree
-	require("nvim-tree.api").tree.open()
-end
+-- local function open_nvim_tree()
+-- 	-- open the tree
+-- 	require("nvim-tree.api").tree.open()
+-- end
 
+
+-- vim.cmd([[
+
+-- " Background colors for active vs inactive windows
+-- " hi ActiveWindow guibg=#202436 " tokyonight-moon default bg
+-- " hi InactiveWindow guibg=#222436
+--
+--
+--
+-- " Call method on window enter
+-- augroup WindowManagement
+--   autocmd!
+--   autocmd WinEnter * call Handle_Win_Enter()
+-- augroup END
+--
+-- " Change highlight group of active/inactive windows
+-- function! Handle_Win_Enter()
+--   setlocal winhighlight=Normal:ActiveWindow,NormalNC:InactiveWindow
+-- endfunction
+-- ]])
+--
+--
 -- vim.cmd([[silent! autocmd! filetypedetect BufRead,BufNewFile *.tf]])
 -- vim.cmd([[autocmd BufRead,BufNewFile *.hcl set filetype=hcl]])
 -- vim.cmd([[autocmd BufRead,BufNewFile .terraformrc,terraform.rc set filetype=hcl]])
