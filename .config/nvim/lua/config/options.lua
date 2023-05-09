@@ -39,6 +39,9 @@ vim.o.splitright = true
 vim.o.termguicolors = true -- Make sure to use all colors in terminal
 vim.o.undofile = true -- Save undo history
 vim.o.updatetime = 250 -- Decrease update time
+vim.o.winbar="%f"
+vim.o.winblend=20
+vim.o.pumblend=20
 
 -- vim.opt.guifont = "JetbrainsMono Nerd Font:h12"
 
