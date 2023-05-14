@@ -10,7 +10,7 @@ end
 local M = {
 	"akinsho/toggleterm.nvim",
 	event = "VeryLazy",
-	enabled = true,
+	enabled = false,
 	opts = function()
 		return {
 			size = vim.o.columns * 0.4,

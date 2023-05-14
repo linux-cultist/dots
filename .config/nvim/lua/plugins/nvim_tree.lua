@@ -67,8 +67,8 @@ local M = {
 		require("nvim-tree").setup({
 			on_attach = on_attach,
 			sync_root_with_cwd = true,
-			-- respect_buf_cwd = true,
-			-- reload_on_bufenter = true,
+			respect_buf_cwd = true,
+			reload_on_bufenter = true,
 			renderer = {
 				root_folder_label = function(path)
 					return vim.fn.fnamemodify(path, ":h:t") .. "/" .. vim.fn.fnamemodify(path, ":t") .. ":"

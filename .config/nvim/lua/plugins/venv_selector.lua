@@ -28,6 +28,7 @@ return {
 		-- search_venv_managers = false,
 		-- search_workspace = true,
 		-- enable_debug_output = false,
+		-- notify_user_on_activate = false,
 	},
 	keys = { {
 		"<localleader>v",
