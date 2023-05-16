@@ -31,4 +31,8 @@ source /usr/share/fzf/completion.bash				# Fzf completions
 shopt -s histappend
 # PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
+# Remap CTRL-T to CTRL-X CTRL-T
+bind -x '"\C-f": fzf-file-widget'
+# bind '"\C-f": transpose-chars'
+
 eval "$(starship init bash)"
