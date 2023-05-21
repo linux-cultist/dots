@@ -8,6 +8,7 @@ return {
 		return {
 			sources = {
 				nls.builtins.formatting.black.with({ extra_args = { "--line-length", "119" } }),
+				nls.builtins.formatting.beautysh,
 				nls.builtins.diagnostics.ruff.with({ extra_args = { "--line-length", "119" } }),
 				nls.builtins.formatting.fish_indent,
 				nls.builtins.diagnostics.fish,

@@ -1358,6 +1358,6 @@ map alt+shift+right kitten pass_keys.py relative_resize right 3 alt+shift+right
 allow_remote_control yes
 listen_on unix:@mykitty
 # BEGIN_KITTY_THEME
-# Tokyo Night Storm
+# YsDark
 include current-theme.conf
 # END_KITTY_THEME

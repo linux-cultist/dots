@@ -12,6 +12,8 @@ alias v="nvim"
 alias vim=v
 alias dots="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
+
 # PS1='[\u@\h \W]\$ '
 # . "$HOME/.cargo/env"
 

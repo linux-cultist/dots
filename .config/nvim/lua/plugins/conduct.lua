@@ -1,5 +1,5 @@
 return {
-	"git@github.com:aaditeynair/conduct.nvim.git",
+	"aaditeynair/conduct.nvim",
 	event = "VeryLazy",
 	config = function()
 		require("conduct").setup()
