@@ -2,4 +2,5 @@ alias vim="nvim"
 alias ll="exa -l --icons --sort changed"
 alias gs="git status"
 alias v="nvim"
-alias ssh="kitty +kitten ssh"
+alias dots='/usr/bin/git --git-dir=/home/cado/.cfg/ --work-tree=/home/cado'
+# alias ssh="kitty +kitten ssh"
