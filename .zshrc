@@ -14,6 +14,7 @@ else
 	ZSH_THEME="pi"
 fi
 
+# if [ "$TMUX" = "" ]; then tmux; fi
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -75,7 +76,7 @@ fi
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(fd fzf autojump)
+# plugins=(fd fzf autojump virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,4 +106,17 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.zsh_aliases
+
+if { [ -n "$KITTY_WINDOW_ID" ] || [ -n "$WEZTERM_PANE" ]; } && command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
+# export WORKON_HOME=$HOME/.virtualenvs
+# export PROJECT_HOME=$HOME/Code/Personal/SomeProject
+# source /usr/bin/virtualenvwrapper.sh
+
+
+# source /home/cado/.config/broot/launcher/bash/br
+eval "$(atuin init zsh --disable-up-arrow)"
+# zinit load atuinsh/atuinsh
 

@@ -1,6 +1,16 @@
 alias vim="nvim"
-alias ll="exa -l --icons --sort changed"
+alias ll="eza -l --icons --sort changed"
 alias gs="git status"
 alias v="nvim"
 alias dots='/usr/bin/git --git-dir=/home/cado/.cfg/ --work-tree=/home/cado'
+
+export LC_ALL="en_US.UTF-8"
+# export NVIM_APPNAME=lazy
+export CONDA_PREFIX=/opt/anaconda
+alias conda_activate='source /opt/anaconda/bin/activate root'
 # alias ssh="kitty +kitten ssh"
+export JUMPHOST="sto1-ops-jumphost-01.internal.thunderkick.com"
+alias ssh_into_puppet="ssh chnis@10.51.10.251 -J sto1-ops-jumphost-01.internal.thunderkick.com -i ~/.ssh/id_ed25519_tk"
+export VAULT_ADDR='https://hvault.internal.thunderkick.com'
+export EDITOR='nvim'
+

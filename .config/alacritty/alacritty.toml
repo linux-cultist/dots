@@ -1,0 +1,11 @@
+import = ["/home/cado/.config/alacritty/themes/themes/tokyo-night-storm.toml"]
+
+[font]
+size = 11
+
+[font.normal]
+family = "monospace"
+style = "Regular"
+
+[shell]
+program = "tmux"

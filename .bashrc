@@ -38,3 +38,5 @@ bind -x '"\C-f": fzf-file-widget'
 # bind '"\C-f": transpose-chars'
 
 eval "$(starship init bash)"
+
+source /home/cado/.config/broot/launcher/bash/br
